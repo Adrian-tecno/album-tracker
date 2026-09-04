@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Album</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container-fluid py-4">
+      <div class="row">
+        <!-- Columna Izquierda (Barra lateral para el formulario) -->
+        <div class="col-3 border-end">
+          <form id="album-form">
+            <h2 class="mb-4 text-center">Add Album</h2>
+
+            <div class="mb-3">
+              <label
+                for="title"
+                class="form-label form-control bg-success text-white text-center"
+                >Title</label
+              >
+              <input
+                type="text"
+                id="title"
+                name="title"
+                class="form-control border-success"
+                placeholder="Enter title"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label
+                for="artist"
+                class="form-label form-control bg-success text-white text-center"
+                >Artist</label
+              >
+              <input
+                type="text"
+                id="artist"
+                name="artist"
+                class="form-control border-success"
+                placeholder="Enter artist"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label
+                for="releaseYear"
+                class="form-label form-control bg-success text-white text-center"
+                >Release Year</label
+              >
+              <input
+                type="number"
+                id="year"
+                name="year"
+                class="form-control border-success"
+                placeholder="Enter release year"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label
+                for="genre"
+                class="form-label form-control bg-success text-white text-center"
+                >Genre</label
+              >
+              <input
+                type="text"
+                id="genre"
+                name="genre"
+                class="form-control border-success"
+                placeholder="Enter genre"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label
+                for="rating"
+                class="form-label form-control bg-success text-white text-center"
+                >Rating</label
+              >
+              <input
+                type="number"
+                id="rating"
+                name="rating"
+                class="form-control border-success"
+                min="1"
+                max="5"
+                placeholder="Enter rating 1 - 5"
+              />
+            </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text bg-success text-white text-center"
+                  >Listened</span
+                >
+              </div>
+              <div class="form-control d-flex align-items-center">
+                <input
+                  type="checkbox"
+                  id="listened"
+                  name="listened"
+                  class="form-check-input ms-1 border-success"
+                />
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-success w-100">Enviar</button>
+          </form>
+        </div>
+
+        <!-- Columna Derecha (Área para los álbumes) -->
+        <div class="col-9">
+          <main id="album-container" class="row g-3">
+            <!--Texto del elemento contenedor
+            <p>Hola dentro de un p</p>-->
+          </main>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
